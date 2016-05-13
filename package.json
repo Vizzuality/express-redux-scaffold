@@ -4,8 +4,8 @@
   "description": "A boilerplate to make static projects using Koa, Redux, React and Mocha",
   "main": "server.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack -p --progress --colors",
-    "postinstall": "npm run build",
+    "build-heroku": "./node_modules/.bin/webpack -p --progress --colors --config ./build/heroku.config.js",
+    "postinstall": "./node_modules/.bin/webpack -p --progress --colors --config ./build/compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,7 @@
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
+    "dotenv": "^2.0.0",
     "json-loader": "^0.5.4",
     "koa": "^1.2.0",
     "koa-static": "^2.0.0",

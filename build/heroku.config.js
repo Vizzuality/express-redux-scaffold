@@ -1,18 +1,19 @@
 'use strict';
 
-const webpack = require('webpack');
 const path = require('path');
+const webpack = require('webpack');
+const root = process.cwd();
 
 const config = {
 
-  context: path.join(__dirname, 'app'),
+  context: path.join(root, 'app'),
 
   entry: {
     app: ['./main.jsx']
   },
 
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.join(root, 'dist'),
     filename: 'bundle.js',
     publicPath: ''
   },
