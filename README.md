@@ -1,6 +1,6 @@
-# React demo project
+# Express, react and redux scaffold
 
-A boilerplate to make static projects using Koa, Redux, React and Mocha.
+A boilerplate to make static projects using Express js, Redux, React and Mocha.
 
 ## Install
 
