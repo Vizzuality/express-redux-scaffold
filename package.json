@@ -4,7 +4,7 @@
   "description": "A template to make static projects using Koa, Redux, React and Mocha",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/xo"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
-    "webpack-dev-middleware": "^1.6.1"
+    "webpack-dev-middleware": "^1.6.1",
+    "xo": "^0.16.0"
   },
   "dependencies": {
     "body-parser": "^1.15.1",
@@ -36,5 +37,19 @@
     "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 2,
+    "ignores": ["app/**"],
+    "rules": {
+      "space-before-function-paren": ["error", {
+        "anonymous": "never",
+        "named": "never"
+      }],
+      "camelcase": ["error", {
+        "properties": "never"
+      }]
+    }
   }
 }

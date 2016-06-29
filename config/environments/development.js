@@ -3,6 +3,7 @@
 const path = require('path');
 const logger = require('morgan');
 const PrettyError = require('pretty-error');
+
 const indexPath = path.join(process.cwd(), 'dist/index.html');
 
 module.exports = function(app) {
@@ -26,7 +27,7 @@ module.exports = function(app) {
   });
 
   app.use(middleware);
-  app.get('*', function response(req, res) {
+  app.get('*', (req, res) => {
     res.write(middleware.fileSystem.readFileSync(indexPath));
     res.end();
   });
