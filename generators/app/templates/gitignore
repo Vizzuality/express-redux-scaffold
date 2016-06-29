@@ -7,3 +7,12 @@
 
 # Vendors
 /node_modules
+
+# Logs
+*.log*
+
+# ENV variables
+.env
+
+# Compiled assets
+/dist
