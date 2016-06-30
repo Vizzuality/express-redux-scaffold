@@ -1,0 +1,1 @@
+# Vizzuality projects generator
