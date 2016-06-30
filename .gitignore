@@ -7,3 +7,6 @@
 
 # Vendors
 /node_modules
+
+# Keep files
+!.keep

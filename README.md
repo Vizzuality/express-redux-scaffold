@@ -2,6 +2,20 @@
 
 TODO: make a description
 
+### Rails and Redux generator
+
+It tries to ingrate Ruby on Rails with modern JavaScript tools and libraries including [Babel](https://babeljs.io/), [React](https://facebook.github.io/react/) and [Redux](https://github.com/reactjs/redux).
+
+### Why React
+
+This integrates Facebook's React front-end framework with Rails. React v0.14.x and greater is supported, with server rendering using [react-rails gem](https://github.com/reactjs/react-rails).
+
+### Why Redux
+
+Redux is a predictable state container for JavaScript apps. [More info about Redux here](https://github.com/reactjs/redux).
+
+It is integrated using Browserify and browserify-rails gem. It lets you mix and match //= require directives and require() calls for including plain javascript files as well as modules. However, it is important to remember that once you are into code that is being browserified you can no longer use sprockets-style require (so no //= require). In many cases, it makes sense to put all your sprockets-required code in a separate file or at the very least at the top of your main JavaScript file. Then use require() to pull in the CommonJS code. [More info about browserify-rails gem here](https://github.com/browserify-rails/browserify-rails).;
+
 
 ## Installation
 

@@ -14,6 +14,7 @@ class Generator extends generators.Base {
     }];
     return this.prompt(prompts).then(answers => {
       this.composeWith(`vizzuality-projects:${answers.technology}`);
+      this.composeWith('vizzuality-projects:common');
     });
   }
 
