@@ -43,6 +43,13 @@ Run this command to publish master branch to Heroku:
 git push heroku master
 ```
 
+Heroku by default installs only the production dependencies, ignoring the development dependencies under devDependencies. Setting the npm production variable to false do the trick: 
+
+```bash
+heroku config:set NPM_CONFIG_PRODUCTION=false
+```
+
+
 ## Contributing
 
 1. Fork it!
