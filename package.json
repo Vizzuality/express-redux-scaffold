@@ -11,7 +11,8 @@
   "files": [
     "generators/app",
     "generators/express",
-    "generators/rails"
+    "generators/rails",
+    "generators/common"
   ],
   "main": "generators/index.js",
   "keywords": [

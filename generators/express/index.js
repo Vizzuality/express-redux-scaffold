@@ -1,4 +1,5 @@
-const _ = require('lodash');
+'use strict';
+
 const generators = require('yeoman-generator');
 
 class ExpressGenerator extends generators.Base {
@@ -8,7 +9,7 @@ class ExpressGenerator extends generators.Base {
       type    : 'input',
       name    : 'name',
       message : 'Your project name',
-      default : _.camelCase(this.appname) // Default to current folder name
+      default : this.appname // Default to current folder name
     }, {
       type    : 'input',
       name    : 'version',
@@ -23,7 +24,7 @@ class ExpressGenerator extends generators.Base {
       type    : 'input',
       name    : 'repository',
       message : 'Url of your repository',
-      default: ''
+      default: `https://github.com/Vizzuality/${this.appname}.git`
     }];
     return this.prompt(prompts).then(function(answers) {
       this.answers = answers;
@@ -38,28 +39,14 @@ class ExpressGenerator extends generators.Base {
     );
 
     this.fs.copy(
-      this.templatePath('babelrc'),
-      this.destinationPath('.babelrc')
-    );
-
-    this.fs.copy(
       this.templatePath('gitignore'),
       this.destinationPath('.gitignore')
     );
 
-    this.fs.copy(
-      this.templatePath('editorconfig'),
-      this.destinationPath('.editorconfig')
-    );
-
-    this.fs.copy(
-      this.templatePath('LICENSE'),
-      this.destinationPath('LICENSE')
-    );
-
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('README.md'),
-      this.destinationPath('README.md')
+      this.destinationPath('README.md'),
+      this.answers
     );
 
     this.fs.copy(
