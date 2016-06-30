@@ -1,6 +1,6 @@
-# Express, react and redux scaffold
+# <%= name %>
 
-A boilerplate to make static projects using Express js, Redux, React and Mocha.
+<%= description %>
 
 ## Install
 
@@ -29,7 +29,7 @@ Run server locally using Heroku environment:
 heroku local web
 ```
 
-## Deploy
+### Deploy
 
 Configure existing heroku app:
 
@@ -42,3 +42,16 @@ Run this command to publish master branch to Heroku:
 ```bash
 git push heroku master
 ```
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b feature/my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/my-new-feature`
+5. Submit a pull request :D
+
+
+## LICENSE
+
+[MIT](LICENSE)
