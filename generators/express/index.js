@@ -82,6 +82,12 @@ class ExpressGenerator extends generators.Base {
       this.destinationPath('server.js')
     );
 
+    this.fs.copyTpl(
+      this.templatePath('app/index.html'),
+      this.destinationPath('app/index.html'),
+      this.answers
+    );
+
     this.mkdir('test');
   }
 
