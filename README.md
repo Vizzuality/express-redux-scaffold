@@ -1,44 +1,47 @@
-# Express, react and redux scaffold
+# Vizzuality projects generator
 
-A boilerplate to make static projects using Express js, Redux, React and Mocha.
+TODO: make a description
 
-## Install
+
+## Installation
 
 Requirements:
 
-* NodeJs 5.2+ [How to install](https://nodejs.org/download/)
-* Heroku toolbet [How to install](https://toolbelt.heroku.com)
+* Node JS v6+ [How to install](https://nodejs.org/download/)
 
-To install run this command:
+First, install [Yeoman](http://yeoman.io):
 
 ```bash
-npm install
+npm install -g yo
 ```
+
+Then, install this generator locally running:
+
+```bash
+npm link
+```
+
 
 ## Usage
 
-Run server locally usgin npm:
+To create a new project using this generator first create a folder for your project, then using terminal go to your new project path. And run this command:
 
 ```bash
-npm start
+yo vizzuality-projects
 ```
 
-Run server locally using Heroku environment:
+Follow the interative instructions to create it.
 
-```bash
-heroku local web
-```
 
-## Deploy
+## Contributing
 
-Configure existing heroku app:
+1. Fork it!
+2. Create your feature branch: `git checkout -b feature/my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/my-new-feature`
+5. Submit a pull request :D
 
-```bash
-heroku git:remote -a project
-```
 
-Run this command to publish master branch to Heroku:
+## LICENSE
 
-```bash
-git push heroku master
-```
+[MIT](LICENSE)
