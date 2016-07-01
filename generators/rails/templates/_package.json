@@ -1,14 +1,14 @@
 {
   "name": "<%= name %>",
   "devDependencies": {
+  },
+  "dependencies": {
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "babelify": "^7.3.0",
     "browserify": "~10.2.4",
-    "browserify-incremental": "^3.1.1"
-  },
-  "dependencies": {
+    "browserify-incremental": "^3.1.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",

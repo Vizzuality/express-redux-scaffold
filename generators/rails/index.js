@@ -124,11 +124,16 @@ class RailsGenerator extends generators.Base {
       this.destinationPath('config')
     );
 
-    // ClassName
     this.fs.copyTpl(
       this.templatePath('config/application.rb'),
       this.destinationPath('config/application.rb'),
       {className: _.capitalize(this.answers.name)}
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('config/database.yml'),
+      this.destinationPath('config/database.yml'),
+      this.answers
     );
   }
 
