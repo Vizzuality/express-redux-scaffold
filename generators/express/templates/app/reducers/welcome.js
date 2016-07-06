@@ -1,11 +1,11 @@
 'use strict';
 
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 
 const example = function(state = 0, action) {
   switch (action.type) {
     default:
-      return state
+      return state;
   }
 };
 
